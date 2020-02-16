@@ -11,6 +11,6 @@ module.exports = {
         ...config.sqlBase
       })
     }
-    return await connectionPool.getConnection()
+    return await connectionPool.getConnection(function(err, connection) {if (err) throw err})
   },
 }
