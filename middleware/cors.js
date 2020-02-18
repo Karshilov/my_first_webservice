@@ -1,13 +1,10 @@
 // 允许的第三方前端域名，精确匹配
 const allowDomains = [
-    /\.myseu\.cn$/,
-    /^myseu\.cn$/,
-    /^app\.heraldstudio\.com$/,
-    /^www\.heraldstudio\.com$/,
     /^localhost$/,
     /^127\./,
     /^172\./,
-    /^192\./
+    /^192\./,
+    /^118\./
   ]
   
   module.exports = async (ctx, next) => {

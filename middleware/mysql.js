@@ -5,6 +5,6 @@ module.exports = async (ctx, next) => {
   try { 
     await next()
   } finally {
-    await ctx.db.end(function(err) {})
+    await ctx.db.release()
   }
 }
